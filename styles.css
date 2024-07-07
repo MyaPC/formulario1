@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   background-color: aliceblue;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,11 +22,12 @@ body {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 400px;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 h2 {
   text-align: center;
+  margin: 5px;
 }
 
 select {
@@ -67,7 +68,8 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
+  margin: 5px;
+  padding: 10px;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 
@@ -79,36 +81,4 @@ button {
 
 button:hover {
   background-color: #45a049;
-}
-
-/* Media Queries for responsive design */
-
-@media (max-width: 768px) {
-  .container {
-    width: 80%;
-    padding: 15px;
-  }
-
-  input[type="text"],
-  input[type="number"],
-  input[type="date"],
-  input[type="time"],
-  button {
-    padding: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 80%;
-    padding: 10px;
-  }
-
-  input[type="text"],
-  input[type="number"],
-  input[type="date"],
-  input[type="time"],
-  button {
-    padding: 6px;
-  }
 }
