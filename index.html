@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h2>Registro de Servicios</h2>
-    <form id="serviceForm" action="https://script.google.com/macros/s/AKfycbwlK3JtWKFqzcktGbjWA_zZ6luA-DN7k2a_Q9JlpFYnAhKb4ujDFjy-Jihp7A7Vpu3kxQ/exec" method="post">
+    <form id="serviceForm" action="https://script.google.com/macros/s/AKfycbxOOG3pPJr3DW5nfn2J-3MdVIkyHeaOpyjUZhLOKYCXFYa829Ja_BZ5piUhXTkZkq1yUw/exec" method="post">
       <div class="form-group">
         <label for="mes">Mes:</label>
         <select id="mes" name="mes" required>
@@ -26,10 +26,6 @@
           <option value="nov">Noviembre</option>
           <option value="dic">Diciembre</option>
         </select>
-      </div>
-      <div class="form-group">
-        <label for="numeroServicio">Número de Servicio:</label>
-        <input type="text" id="numeroServicio" name="numeroServicio" required>
       </div>
       <div class="form-group">
         <label for="fecha">Fecha:</label>
@@ -51,13 +47,10 @@
         <label for="desplazamiento">Desplazamiento (minutos):</label>
         <input type="number" id="desplazamiento" name="desplazamiento" required>
       </div>
-      <div class="form-group">
-        <label for="totalHoras">Total Horas:</label>
-        <input type="text" id="totalHoras" name="totalHoras" readonly>
-      </div>
-      <button type="button" onclick="calcularHoras()">Calcular Total Horas</button>
       <button type="submit">Guardar en Google Sheets</button>
     </form>
+    <br>
+    <button id="viewSheetButton" onclick="window.open('https://docs.google.com/spreadsheets/d/1Tj7gegi5Cq4Kr2vlpvLinP5GyV5Bl--eQfW8qHFoKd8/edit', '_blank')">Ver y Editar Hoja de Cálculo</button>
   </div>
   <script src="script.js"></script>
 </body>
